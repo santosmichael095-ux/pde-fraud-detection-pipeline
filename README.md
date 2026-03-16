@@ -28,3 +28,24 @@ Data Engineering Pipelines
 ## Pipeline Architecture
 
 The project implements a data pipeline to identify potential fraud cases from operational datasets.
+
+                 Raw Datasets
+        (targets, pde, supply, fraud,
+         inspection, meter, refusal)
+                        │
+                        ▼
+              Data Processing Layer
+       - meter feature engineering
+       - inspection history filtering
+                        │
+                        ▼
+               Data Integration Layer
+           merge operational datasets
+                        │
+                        ▼
+               Business Rules Layer
+         strategy validation and filters
+                        │
+                        ▼
+                 Output Generation
+        prioritized fraud investigation
