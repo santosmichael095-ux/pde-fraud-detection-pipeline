@@ -25,3 +25,6 @@ Data Engineering Pipelines
 4. Data integration
 5. Business rule filtering
 6. Export prioritized fraud cases
+## Pipeline Architecture
+
+The project implements a data pipeline to identify potential fraud cases from operational datasets.
